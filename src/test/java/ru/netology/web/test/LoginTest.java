@@ -17,8 +17,8 @@ public class LoginTest {
         var verificationPage = loginPage.validLogin(authInfo);
         var verificationCode = DataHelper.getVerificationCodeFor(authInfo);
         verificationPage.validVerify(verificationCode);
-        var dashboardPage = new DashboardPage();
     }
+
     @AfterAll
     static void shouldTruncateTables(){
         DataHelper.truncateTables();

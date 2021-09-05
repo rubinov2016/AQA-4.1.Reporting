@@ -44,8 +44,6 @@ public class DataHelper {
             var codeObject = runner.query(conn, codeSQL, new ScalarHandler<>());
             var codeString = codeObject.toString();
             return new VerificationCode(codeString);
-            //для проверки падения теста
-            //return new VerificationCode("12345");
         }
     }
 

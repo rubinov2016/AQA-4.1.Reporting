@@ -12,9 +12,6 @@ import static org.apache.commons.lang3.StringUtils.trim;
 
 public class DashboardPage {
     private SelenideElement heading = $("[data-test-id=dashboard]");
-//    private ElementsCollection cards = $$(".list__item");
-//    private ElementsCollection buttons = $$(".button__content");
-
 
     public DashboardPage() {
         heading.shouldBe(visible);
